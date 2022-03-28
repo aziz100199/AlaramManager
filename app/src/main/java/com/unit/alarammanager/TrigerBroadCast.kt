@@ -10,7 +10,7 @@ class TrigerBroadCast : BroadcastReceiver() {
     var mediaPlayer = MediaPlayer()
 
     override fun onReceive(context: Context, intent: Intent) {
-        mediaPlayer = MediaPlayer.create(context, Settings.System.DEFAULT_NOTIFICATION_URI)
+        mediaPlayer = MediaPlayer.create(context, Settings.System.DEFAULT_RINGTONE_URI)
         mediaPlayer.start()
 
     }
